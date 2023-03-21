@@ -63,8 +63,8 @@ await server.start();
 // and our expressMiddleware function.
 app.use(
   "/",
-  // cors(),
-  cors({ origin: ['https://*.up.railway.app', 'http://localhost:3000', 'https://bazco.de', 'https://studio.apollographql.com'] }),
+  cors(),
+  // cors({ origin: ['https://*.up.railway.app', 'http://localhost:3000', 'https://bazco.de', 'https://studio.apollographql.com'] }),
   bodyParser.json(),
   // expressMiddleware accepts the same arguments:
   // an Apollo Server instance and optional configuration options
